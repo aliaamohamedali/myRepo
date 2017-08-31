@@ -1,0 +1,36 @@
+pc@DESKTOP-B0V5MA7 MINGW32 /d/MyProjects/myRepo (master)
+$ git pull --rebase origin master
+From https://github.com/aliaamohamedali/myRepo
+ * branch            master     -> FETCH_HEAD
+First, rewinding head to replay your work on top of it...
+Applying: Add existing file
+
+pc@DESKTOP-B0V5MA7 MINGW32 /d/MyProjects/myRepo (master)
+$ git add .
+
+pc@DESKTOP-B0V5MA7 MINGW32 /d/MyProjects/myRepo (master)
+$ git commit -m "pull, commit and push"
+On branch master
+nothing to commit, working tree clean
+
+pc@DESKTOP-B0V5MA7 MINGW32 /d/MyProjects/myRepo (master)
+$ git remote add origin https://github.com/aliaamohamedali/myRepo
+fatal: remote origin already exists.
+
+pc@DESKTOP-B0V5MA7 MINGW32 /d/MyProjects/myRepo (master)
+$ git remote -v
+origin  https://github.com/aliaamohamedali/myRepo.git (fetch)
+origin  https://github.com/aliaamohamedali/myRepo.git (push)
+
+pc@DESKTOP-B0V5MA7 MINGW32 /d/MyProjects/myRepo (master)
+$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 320 bytes | 320.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/aliaamohamedali/myRepo.git
+   334c7c3..b19c840  master -> master
+
+pc@DESKTOP-B0V5MA7 MINGW32 /d/MyProjects/myRepo (master)
+$
